@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Ali Umut Kaypak — PhD researcher at NYU Tandon working on safe machine learning, Control Barrier Functions, and robotic planning.">
+  <title>Ali Umut Kaypak | Robotics &amp; Control</title>
+  <!-- Standalone portfolio. Biographical and publication details follow the updated CV supplied on 2026-10-31.
+       DOI links for the three published papers are retained from the earlier supplied CV.
+       Dates and ongoing roles reflect that CV; review them when updating this page.
+       LinkedIn and Scholar URLs were recovered from the PDF's embedded links.
+       No build, scripts, external fonts, images, or other files are required. -->
+  <style>
+    :root { --paper:#f7f6f0; --white:#fffefa; --ink:#192e30; --muted:#526362; --accent:#246452; --line:#cdd4c9; --wash:#e9eee5; --serif:Georgia,'Times New Roman',serif; --sans:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:2rem; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.65; -webkit-font-smoothing:antialiased; }
+    a { color:var(--accent); text-underline-offset:.22em; text-decoration-thickness:1px; }
+    a:hover { text-decoration-thickness:2px; }
+    a:focus-visible, summary:focus-visible { outline:3px solid #ad4d26; outline-offset:5px; border-radius:2px; }
+    ::selection { background:#d7e4c7; color:var(--ink); }
+    .wrap { width:min(1120px, calc(100% - 96px)); margin-inline:auto; }
+    .skip { position:absolute; top:12px; left:12px; z-index:10; padding:12px 20px; background:var(--ink); color:white; transform:translateY(-180%); }
+    .skip:focus { transform:translateY(0); }
+    .header { display:flex; align-items:center; justify-content:space-between; gap:24px; padding-block:26px; border-bottom:1px solid var(--line); }
+    .brand { color:var(--ink); font-size:14px; font-weight:700; letter-spacing:.06em; text-decoration:none; }
+    .brand span { color:var(--accent); margin-right:10px; }
+    nav { display:flex; flex-wrap:wrap; gap:8px 25px; }
+    nav a { display:inline-flex; align-items:center; min-height:44px; font-size:13px; color:var(--ink); text-decoration:none; }
+    nav a:hover { text-decoration:underline; }
+    .eyebrow { margin:0 0 22px; font-size:11px; letter-spacing:.16em; font-weight:700; text-transform:uppercase; color:var(--accent); }
+    .hero { display:grid; grid-template-columns:1.5fr 1fr; gap:70px; align-items:center; padding-block:90px 82px; }
+    h1,h2,h3,p { margin-top:0; }
+    h1 { font-family:var(--serif); font-size:clamp(3.4rem,6.3vw,5.5rem); font-weight:400; letter-spacing:-.055em; line-height:1.03; margin-bottom:28px; }
+    h1 span { display:block; }
+    .intro { font-family:var(--serif); font-size:25px; line-height:1.4; max-width:540px; margin-bottom:20px; }
+    .affiliation { color:var(--muted); font-size:14px; max-width:440px; margin-bottom:28px; }
+    .actions { display:flex; flex-wrap:wrap; align-items:center; gap:14px 26px; }
+    .button { display:inline-flex; align-items:center; justify-content:center; gap:24px; padding:12px 20px; min-height:48px; background:var(--ink); color:var(--white); font-size:13px; font-weight:600; text-decoration:none; border:1px solid var(--ink); }
+    .button:hover { background:var(--accent); }
+    .text-link { display:inline-flex; align-items:center; min-height:44px; font-size:13px; font-weight:600; }
+    .focus-panel { border:1px solid var(--line); padding:28px; background:var(--wash); }
+    .focus-panel svg { display:block; width:100%; height:auto; margin:0 auto 22px; }
+    .focus-panel .eyebrow { margin-bottom:14px; }
+    .focus-panel p:last-child { margin:0; font-family:var(--serif); font-size:23px; line-height:1.35; }
+    .section { display:grid; grid-template-columns:220px minmax(0,1fr); gap:56px; padding-block:64px; border-top:1px solid var(--line); }
+    .section-label .eyebrow { margin-bottom:12px; }
+    h2 { font-family:var(--serif); font-size:31px; font-weight:400; letter-spacing:-.025em; line-height:1.2; }
+    .lede { font-size:20px; line-height:1.65; max-width:740px; }
+    .muted { color:var(--muted); }
+    .tags { display:flex; flex-wrap:wrap; gap:8px; list-style:none; margin:25px 0 0; padding:0; }
+    .tags li { padding:6px 12px; border:1px solid var(--line); border-radius:3px; font-size:12px; color:var(--accent); }
+    .projects { display:grid; gap:0; }
+    .project { padding-block:27px; border-bottom:1px solid var(--line); }
+    .project:first-child { padding-top:0; }
+    .project:last-child { padding-bottom:0; border-bottom:0; }
+    .project-meta { display:flex; align-items:center; gap:12px; color:var(--accent); font-size:11px; font-weight:600; letter-spacing:.1em; text-transform:uppercase; margin-bottom:12px; }
+    .project-meta span:first-child { font-family:var(--serif); font-size:19px; font-weight:400; }
+    h3 { font-size:20px; line-height:1.4; letter-spacing:-.02em; font-weight:600; margin-bottom:12px; }
+    .project p { color:var(--muted); font-size:15px; margin-bottom:10px; }
+    .project-links { display:flex; flex-wrap:wrap; gap:6px 24px; }
+    .publication-list { list-style:none; padding:0; margin:0; }
+    .publication { display:grid; grid-template-columns:46px minmax(0,1fr); gap:20px; padding:27px 0; border-bottom:1px solid var(--line); scroll-margin-top:28px; }
+    .publication:first-child { padding-top:0; }
+    .publication:last-child { border-bottom:0; }
+    .pub-year { font-size:12px; font-weight:600; color:var(--accent); padding-top:4px; }
+    .publication h3 { font-family:var(--serif); font-size:22px; font-weight:400; letter-spacing:-.01em; margin-bottom:10px; }
+    .authors { color:var(--muted); font-size:13px; line-height:1.75; margin-bottom:7px; }
+    .authors strong { color:var(--ink); font-weight:600; }
+    .venue { font-size:13px; margin-bottom:10px; }
+    .doi { display:inline-block; padding-block:8px; font-size:12px; overflow-wrap:anywhere; }
+    .note { font-size:12px; color:var(--muted); margin:10px 0 0; }
+    .timeline { display:grid; gap:30px; }
+    .entry { border-left:2px solid var(--line); padding-left:23px; }
+    .entry-head { display:flex; justify-content:space-between; align-items:baseline; gap:12px 20px; flex-wrap:wrap; }
+    .entry h3 { font-size:17px; margin-bottom:5px; }
+    .date { color:var(--muted); font-size:12px; }
+    .entry p { font-size:14px; margin-bottom:6px; }
+    .entry p:last-child { margin-bottom:0; }
+    .roles { list-style:none; padding:0; margin:10px 0; font-size:14px; }
+    .roles li { margin:5px 0; }
+    .roles .date { display:block; }
+    .two-col { display:grid; grid-template-columns:1fr 1fr; gap:40px; }
+    .small-heading { font-size:12px; text-transform:uppercase; letter-spacing:.1em; margin-bottom:24px; color:var(--accent); }
+    .compact-list { list-style:none; margin:0; padding:0; }
+    .compact-list li { margin-bottom:20px; }
+    .compact-list strong { display:block; font-size:14px; font-weight:600; }
+    .compact-list span { font-size:12px; color:var(--muted); }
+    .teaching p { font-size:14px; }
+    .contact { background:var(--ink); color:var(--paper); padding:48px; display:grid; grid-template-columns:1fr 1fr; gap:32px; margin-bottom:56px; }
+    .contact .eyebrow { color:#b9d1ba; margin-bottom:14px; }
+    .contact h2 { font-size:39px; margin-bottom:0; }
+    .contact-links { display:flex; flex-direction:column; align-items:flex-start; justify-content:center; }
+    .contact a { color:var(--paper); }
+    .email { font-size:clamp(1.1rem,2.5vw,1.5rem); overflow-wrap:anywhere; padding-block:8px; }
+    .profiles { display:flex; flex-wrap:wrap; gap:12px 24px; }
+    .profiles a { min-height:44px; display:inline-flex; align-items:center; font-size:13px; }
+    footer { border-top:1px solid var(--line); padding-block:25px 34px; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:12px; font-size:11px; color:var(--muted); }
+    footer a { padding-block:12px; }
+    @media (min-width:1400px) { .hero { padding-block:100px; } }
+    @media (max-width:950px) { .wrap { width:calc(100% - 56px); } .hero { gap:35px; padding-block:65px; } .section { grid-template-columns:165px minmax(0,1fr); gap:30px; } .focus-panel { padding:22px; } .two-col { gap:28px; } }
+    @media (max-width:700px) { .wrap { width:calc(100% - 40px); } .header { flex-direction:column; align-items:flex-start; gap:8px; padding-block:18px 12px; } nav { gap:0 22px; } .hero { grid-template-columns:1fr; gap:35px; padding-block:48px; } h1 { font-size:clamp(3.5rem,12vw,4.6rem); } .intro { font-size:23px; } .focus-panel { display:grid; grid-template-columns:100px 1fr; gap:20px; align-items:center; } .focus-panel svg { margin:0; } .focus-panel p:last-child { font-size:21px; } .focus-panel .eyebrow { font-size:9px; margin-bottom:7px; } .section { grid-template-columns:1fr; gap:25px; padding-block:42px; } h2 { margin-bottom:0; } .section-label { display:flex; align-items:baseline; gap:16px; } .section-label .eyebrow { margin:0; } .section-label .eyebrow span { display:none; } .lede { font-size:18px; } .two-col { grid-template-columns:1fr; gap:25px; } .publication { grid-template-columns:36px minmax(0,1fr); gap:13px; } .publication h3 { font-size:21px; } .contact { grid-template-columns:1fr; gap:22px; padding:28px; margin-bottom:35px; } .contact h2 { font-size:34px; } }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+    @media print { body { background:#fff; color:#000; font-size:11pt; } .wrap { width:100%; } .skip,nav,.actions,.focus-panel,footer a { display:none; } .header { padding:0 0 12pt; } .hero { display:block; padding:24pt 0; } h1 { font-size:38pt; } h1 span { display:inline; } .section { display:block; padding:18pt 0; } .section-label { margin-bottom:14pt; } .section-label .eyebrow { display:none; } h2 { font-size:22pt; } .project,.publication,.entry,.compact-list li { break-inside:avoid; } .contact { background:#fff; color:#000; border-top:1px solid #aaa; padding:20pt 0; margin:0; } .contact a,.contact .eyebrow { color:#000; } a { color:#000; } .two-col { gap:30pt; } }
+  </style>
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+    <header class="header">
+      <a class="brand" href="#top" aria-label="Ali Umut Kaypak, home"><span aria-hidden="true">AUK /</span> Ali Umut Kaypak</a>
+      <nav aria-label="Main navigation">
+        <a href="#research">Research</a><a href="#publications">Publications</a><a href="#background">Background</a><a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="hero" aria-labelledby="name">
+        <div>
+          <p class="eyebrow">Robotics · Control · Machine learning</p>
+          <h1 id="name">Ali Umut <span>Kaypak</span></h1>
+          <p class="intro">Safe learning and control<br>for real-world robotic systems.</p>
+          <p class="affiliation">Fourth-year PhD student in Electrical and Computer Engineering<br>Control/Robotics Research Laboratory<br>NYU Tandon School of Engineering</p>
+          <div class="actions"><a class="button" href="#publications">Explore publications <span aria-hidden="true">↗</span></a><a class="text-link" href="mailto:ak10531@nyu.edu">Get in touch</a></div>
+        </div>
+        <aside class="focus-panel" aria-label="Research focus">
+          <!-- Decorative abstract geometry, not an experimental result or a data plot. -->
+          <svg viewBox="0 0 300 225" fill="none" aria-hidden="true" focusable="false">
+            <defs><pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse"><path d="M25 0H0V25" stroke="#ced8cc" stroke-width=".6"/></pattern></defs>
+            <rect width="300" height="225" fill="url(#grid)"/>
+            <path d="M42 166L75 59L179 31L259 102L226 189L119 207Z" fill="#d6e3ce" stroke="#68856d" stroke-width="1.2"/>
+            <path d="M66 159C90 161 92 116 122 121S150 166 178 140S203 75 239 98" stroke="#246452" stroke-width="2" stroke-dasharray="4 5"/>
+            <path d="M78 185L119 128L169 103L204 127" stroke="#192e30" stroke-width="7" stroke-linejoin="round"/>
+            <circle cx="119" cy="128" r="8" fill="#f7f6f0" stroke="#192e30" stroke-width="3"/><circle cx="169" cy="103" r="7" fill="#f7f6f0" stroke="#192e30" stroke-width="3"/>
+            <path d="M200 119L213 125L207 138M61 192H93" stroke="#192e30" stroke-width="3"/>
+            <circle cx="239" cy="98" r="4" fill="#246452"/>
+          </svg>
+          <div><p class="eyebrow">From theory to deployment</p><p>Safety-critical control.<br>Grounded robot planning.</p></div>
+        </aside>
+      </section>
+      <section class="section" id="research" aria-labelledby="research-title">
+        <div class="section-label"><p class="eyebrow">01 <span>/ Focus</span></p><h2 id="research-title">Research</h2></div>
+        <div><p class="lede">My research explores safe machine learning applications in robotics and control, with a focus on safety-critical control methodologies using Control Barrier Functions.</p><p class="muted">I work on both the theoretical development of these methods and the practical challenges of deploying them on real-world robotic systems.</p>
+          <ul class="tags" aria-label="Research topics"><li>Control Barrier Functions</li><li>Safe machine learning</li><li>Model-based reinforcement learning</li><li>Model Predictive Control</li><li>Multi-robot interaction</li><li>LLM-based planning</li><li>Semantic scene graphs</li></ul>
+        </div>
+      </section>
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-label"><p class="eyebrow">02 <span>/ In practice</span></p><h2 id="projects-title">Selected<br>projects</h2></div>
+        <div class="projects">
+          <article class="project"><div class="project-meta"><span>01</span> Safe learning &amp; predictive control</div><h3>Safe model-based reinforcement learning</h3><p>Developed a safe reinforcement learning framework for unknown, stochastic dynamics by jointly learning system dynamics and Control Barrier Functions with neural networks. Integrated uncertainty-aware CBF constraints into sampling-based Model Predictive Control for safe trajectory planning.</p><p>Validated the approach in robotic navigation simulations, demonstrating improved safety and competitive performance compared with existing safe reinforcement learning methods.</p><a class="text-link" href="#pub-safe-rl">Read the safe reinforcement learning preprint <span aria-hidden="true">&nbsp;↗</span></a></article>
+          <article class="project"><div class="project-meta"><span>02</span> Safety &amp; control</div><h3>Safe multi-robotic arm interaction</h3><p>Explored Control Barrier Functions for safe interaction between multiple robotic arms, addressing computational challenges in real-time deployment. Developed and conducted physical experiments with two Franka Emika Research 3 arms to validate the approach.</p><a class="text-link" href="#pub-safe">Read the related publication <span aria-hidden="true">&nbsp;↗</span></a></article>
+          <article class="project"><div class="project-meta"><span>03</span> Autonomy &amp; semantic mapping</div><h3>Online planning with LLMs and semantic scene graphs</h3><p>Contributed to a real-time onboard framework for quadruped navigation in unknown, dynamic environments. Designed the hierarchical scene graph and implemented an LLM-based planner that generates and revises plans using real-time scene updates.</p><a class="text-link" href="#pub-orion">Read the autonomous navigation preprint <span aria-hidden="true">&nbsp;↗</span></a></article>
+          <article class="project"><div class="project-meta"><span>04</span> Language &amp; task planning</div><h3>Grounded LLM-based robot task planning</h3><p>Explored LLMs in robotic task planning and developed methods for reliable, grounded plans aligned with the environment and the robot’s capabilities.</p><div class="project-links"><a class="text-link" href="#pub-multitalk">MultiTalk <span aria-hidden="true">&nbsp;↗</span></a><a class="text-link" href="#pub-grounding">Closed-loop state feedback <span aria-hidden="true">&nbsp;↗</span></a></div></article>
+        </div>
+      </section>
+      <section class="section" id="publications" aria-labelledby="publications-title">
+        <div class="section-label"><p class="eyebrow">03 <span>/ Writing</span></p><h2 id="publications-title">Selected<br>publications</h2></div>
+        <div>
+          <!-- Exact DOI identifiers retained from the earlier CV for the same published papers.
+               Titles, authors, and arXiv identifiers follow the updated CV. No DOI was supplied for either preprint. -->
+          <ol class="publication-list">
+            <li class="publication" id="pub-safe-rl"><span class="pub-year">2026</span><article><h3>A Control Barrier Function-Constrained Model Predictive Control Framework for Safe Reinforcement Learning</h3><p class="authors"><strong>A. U. Kaypak</strong>, P. Krishnamurthy, and F. Khorrami</p><p class="venue">(under review)</p><a class="doi" href="https://arxiv.org/abs/2604.06463" aria-label="Read the safe reinforcement learning preprint on arXiv">arXiv:2604.06463 ↗</a></article></li>
+            <li class="publication" id="pub-safe"><span class="pub-year">2026</span><article><h3>Safe multi-robotic arm interaction via 3D convex shapes</h3><p class="authors"><strong>A. U. Kaypak</strong>, S. Wei, P. Krishnamurthy, and F. Khorrami</p><p class="venue"><em>Robotics and Autonomous Systems</em>, vol. 196, 105263.</p><a class="doi" href="https://doi.org/10.1016/j.robot.2025.105263" aria-label="DOI for Safe multi-robotic arm interaction via 3D convex shapes">DOI: 10.1016/j.robot.2025.105263 ↗</a></article></li>
+            <li class="publication" id="pub-multitalk"><span class="pub-year">2025</span><article><h3>MultiTalk: Introspective and Extrospective Dialogue for Human-Environment-LLM Alignment</h3><p class="authors">V. N. Devarakonda*, <strong>A. U. Kaypak*</strong>, S. Yuan, P. Krishnamurthy, Y. Fang, and F. Khorrami</p><p class="venue"><em>2025 IEEE International Conference on Robotics and Automation (ICRA)</em>, pp. 10737–10743.</p><a class="doi" href="https://doi.org/10.1109/ICRA55743.2025.11128486" aria-label="DOI for MultiTalk">DOI: 10.1109/ICRA55743.2025.11128486 ↗</a></article></li>
+            <li class="publication" id="pub-grounding"><span class="pub-year">2025</span><article><h3>Grounding Large Language Models for Robot Task Planning Using Closed-Loop State Feedback</h3><p class="authors">V. Bhat*, <strong>A. U. Kaypak*</strong>, P. Krishnamurthy, R. Karri, and F. Khorrami</p><p class="venue"><em>Advanced Robotics Research</em>, e202500072.</p><a class="doi" href="https://doi.org/10.1002/adrr.202500072" aria-label="DOI for Grounding Large Language Models for Robot Task Planning Using Closed-Loop State Feedback">DOI: 10.1002/adrr.202500072 ↗</a></article></li>
+            <li class="publication" id="pub-orion"><span class="pub-year">2024</span><article><h3>Open-Architecture End-to-End System for Real-World Autonomous Robot Navigation</h3><p class="authors">V. N. Devarakonda*, <strong>A. U. Kaypak*</strong>, R. G. Goswami*, N. Patel, R. Khorrambakht, P. Krishnamurthy, and F. Khorrami</p><p class="venue"><em>arXiv preprint</em>, arXiv:2410.06239. Listed as under review in the CV.</p><a class="doi" href="https://arxiv.org/abs/2410.06239" aria-label="Read the autonomous navigation preprint on arXiv">arXiv:2410.06239 ↗</a></article></li>
+          </ol>
+          <p class="note">* Equal contribution.</p>
+        </div>
+      </section>
+      <section class="section" id="background" aria-labelledby="education-title">
+        <div class="section-label"><p class="eyebrow">04 <span>/ Background</span></p><h2 id="education-title">Education</h2></div>
+        <div class="timeline">
+          <article class="entry"><div class="entry-head"><h3>New York University</h3><span class="date">Aug 2023 – Present</span></div><p>PhD, Electrical and Computer Engineering</p><p class="muted">Tandon School of Engineering · Brooklyn</p><p class="muted">CGPA: 4.00 / 4.00</p></article>
+          <article class="entry"><div class="entry-head"><h3>Bogazici University</h3><span class="date">Sep 2018 – Jan 2023</span></div><p>BSc, Electrical and Electronics Engineering<br>BSc, Mathematics</p><p class="muted">Istanbul · Double major</p><p class="muted">CGPA: 3.87 / 4.00 for each degree</p></article>
+        </div>
+      </section>
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <div class="section-label"><p class="eyebrow">05</p><h2 id="experience-title">Professional<br>experience</h2></div>
+        <div class="timeline">
+          <article class="entry"><div class="entry-head"><h3>Siemens Healthineers</h3><span class="date">Jun – Aug 2026</span></div><p>Research Intern · Multimodal AI</p><p class="muted">Princeton, NJ</p></article>
+          <article class="entry"><h3>Tarentum · UAhero Project</h3><p class="muted">Istanbul, Turkey</p><ul class="roles"><li>Junior Data Scientist <span class="date">Jan 2022 – May 2023</span></li><li>Data Science Intern <span class="date">Oct 2021 – Jan 2022</span></li></ul></article>
+          <article class="entry"><h3>TUBITAK</h3><p class="muted">Scientific and Technological Research Council of Turkey<br>Kocaeli, Turkey</p><ul class="roles"><li>Software Intern <span class="date">Jul – Sep 2021; Jul 2020</span></li></ul></article>
+        </div>
+      </section>
+      <section class="section" aria-labelledby="academic-title">
+        <div class="section-label"><p class="eyebrow">06 <span>/ Academic life</span></p><h2 id="academic-title">Teaching<br>&amp; service</h2></div>
+        <div>
+          <div class="teaching"><ul class="compact-list"><li><strong>Course Assistant · Linear Systems</strong><span>New York University · Fall 2024</span></li><li><strong>Student Council Representative</strong><span>Bogazici University · Dec 2019 – Jun 2021</span></li></ul><p class="muted">Helped organize mentoring and scientific research incentive programs for undergraduates through the Electrical &amp; Electronics Engineering Student Council.</p></div>
+        </div>
+      </section>
+      <section class="section" id="toolkit" aria-labelledby="toolkit-title">
+        <div class="section-label"><p class="eyebrow">07 <span>/ Technical strengths</span></p><h2 id="toolkit-title">Tools &amp;<br>platforms</h2></div>
+        <div class="two-col">
+          <div><h3 class="small-heading">Software</h3><ul class="compact-list"><li><strong>Python, Docker, PyTorch, MATLAB</strong><span>Everyday use</span></li><li><strong>C++, ROS2</strong><span>Comfortable</span></li></ul></div>
+          <div><h3 class="small-heading">Robotic systems</h3><ul class="compact-list"><li><strong>Franka Research 3</strong><span>Robotic arm</span></li><li><strong>Unitree Go2</strong><span>Quadruped</span></li></ul></div>
+        </div>
+      </section>
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div><p class="eyebrow">Contact &amp; profiles</p><h2 id="contact-title">Get in touch.</h2></div>
+        <div class="contact-links"><a class="email" href="mailto:ak10531@nyu.edu">ak10531@nyu.edu</a><div class="profiles">
+          <!-- Both profile URLs are supplied in the CV's hyperlink annotations; placeholders are unnecessary. -->
+          <a href="https://scholar.google.com/citations?user=6ErWlTAAAAAJ&amp;hl=en&amp;oi=ao">Google Scholar <span aria-hidden="true">&nbsp;↗</span></a><a href="https://www.linkedin.com/in/aliumut/">LinkedIn <span aria-hidden="true">&nbsp;↗</span></a>
+        </div></div>
+      </section>
+    </main>
+    <footer><span>Ali Umut Kaypak · Robotics &amp; Control</span><a href="#top">Back to top ↑</a></footer>
+  </div>
+</body>
+</html>
