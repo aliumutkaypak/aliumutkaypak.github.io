@@ -93,7 +93,6 @@
     .contact h2 { font-size:39px; margin-bottom:0; }
     .contact-links { display:flex; flex-direction:column; align-items:flex-start; justify-content:center; }
     .contact a { color:var(--paper); }
-    .email { font-size:clamp(1.1rem,2.5vw,1.5rem); overflow-wrap:anywhere; padding-block:8px; }
     .profiles { display:flex; flex-wrap:wrap; gap:12px 24px; }
     .profiles a { min-height:44px; display:inline-flex; align-items:center; font-size:13px; }
     footer { border-top:1px solid var(--line); padding-block:25px 34px; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:12px; font-size:11px; color:var(--muted); }
@@ -154,16 +153,19 @@
         </div>
       </section>
       <section class="section" id="publications" aria-labelledby="publications-title">
-        <div class="section-label"><p class="eyebrow">03 <span>/ Writing</span></p><h2 id="publications-title">Selected<br>publications</h2></div>
+        <div class="section-label"><p class="eyebrow">03 <span>/ Writing</span></p><h2 id="publications-title">Publications</h2></div>
         <div>
-          <!-- Exact DOI identifiers retained from the earlier CV for the same published papers.
-               Titles, authors, and arXiv identifiers follow the updated CV. No DOI was supplied for either preprint. -->
+          <!-- First-author and equal-contribution papers appear before other coauthored work.
+               Existing entries retain CV metadata; RESCORE and Hölder Signed Distance metadata follow arXiv.
+               RESCORE acceptance and Hölder review status were supplied by the author. -->
           <ol class="publication-list">
             <li class="publication" id="pub-safe-rl"><span class="pub-year">2026</span><article><h3>A Control Barrier Function-Constrained Model Predictive Control Framework for Safe Reinforcement Learning</h3><p class="authors"><strong>A. U. Kaypak</strong>, P. Krishnamurthy, and F. Khorrami</p><p class="venue">(under review)</p><a class="doi" href="https://arxiv.org/abs/2604.06463" aria-label="Read the safe reinforcement learning preprint on arXiv">arXiv:2604.06463 ↗</a></article></li>
             <li class="publication" id="pub-safe"><span class="pub-year">2026</span><article><h3>Safe multi-robotic arm interaction via 3D convex shapes</h3><p class="authors"><strong>A. U. Kaypak</strong>, S. Wei, P. Krishnamurthy, and F. Khorrami</p><p class="venue"><em>Robotics and Autonomous Systems</em>, vol. 196, 105263.</p><a class="doi" href="https://doi.org/10.1016/j.robot.2025.105263" aria-label="DOI for Safe multi-robotic arm interaction via 3D convex shapes">DOI: 10.1016/j.robot.2025.105263 ↗</a></article></li>
-            <li class="publication" id="pub-multitalk"><span class="pub-year">2025</span><article><h3>MultiTalk: Introspective and Extrospective Dialogue for Human-Environment-LLM Alignment</h3><p class="authors">V. N. Devarakonda*, <strong>A. U. Kaypak*</strong>, S. Yuan, P. Krishnamurthy, Y. Fang, and F. Khorrami</p><p class="venue"><em>2025 IEEE International Conference on Robotics and Automation (ICRA)</em>, pp. 10737–10743.</p><a class="doi" href="https://doi.org/10.1109/ICRA55743.2025.11128486" aria-label="DOI for MultiTalk">DOI: 10.1109/ICRA55743.2025.11128486 ↗</a></article></li>
+            <li class="publication" id="pub-multitalk"><span class="pub-year">2025</span><article><h3>MultiTalk: Introspective and Extrospective Dialogue for Human-Environment-LLM Alignment</h3><p class="authors">V. N. Devarakonda*, <strong>A. U. Kaypak*</strong>, S. Yuan, P. Krishnamurthy, Y. Fang, and F. Khorrami</p><p class="venue"><em>2025 IEEE International Conference on Robotics and Automation (ICRA)</em>, pp. 10737–10743.</p><div class="project-links"><a class="doi" href="https://doi.org/10.1109/ICRA55743.2025.11128486" aria-label="DOI for MultiTalk">DOI: 10.1109/ICRA55743.2025.11128486 ↗</a><a class="doi" href="https://llm-multitalk.github.io/" aria-label="Visit the MultiTalk project website">Project website ↗</a></div></article></li>
             <li class="publication" id="pub-grounding"><span class="pub-year">2025</span><article><h3>Grounding Large Language Models for Robot Task Planning Using Closed-Loop State Feedback</h3><p class="authors">V. Bhat*, <strong>A. U. Kaypak*</strong>, P. Krishnamurthy, R. Karri, and F. Khorrami</p><p class="venue"><em>Advanced Robotics Research</em>, e202500072.</p><a class="doi" href="https://doi.org/10.1002/adrr.202500072" aria-label="DOI for Grounding Large Language Models for Robot Task Planning Using Closed-Loop State Feedback">DOI: 10.1002/adrr.202500072 ↗</a></article></li>
-            <li class="publication" id="pub-orion"><span class="pub-year">2024</span><article><h3>Open-Architecture End-to-End System for Real-World Autonomous Robot Navigation</h3><p class="authors">V. N. Devarakonda*, <strong>A. U. Kaypak*</strong>, R. G. Goswami*, N. Patel, R. Khorrambakht, P. Krishnamurthy, and F. Khorrami</p><p class="venue"><em>arXiv preprint</em>, arXiv:2410.06239. Listed as under review in the CV.</p><a class="doi" href="https://arxiv.org/abs/2410.06239" aria-label="Read the autonomous navigation preprint on arXiv">arXiv:2410.06239 ↗</a></article></li>
+            <li class="publication" id="pub-orion"><span class="pub-year">2024</span><article><h3>Open-Architecture End-to-End System for Real-World Autonomous Robot Navigation</h3><p class="authors">V. N. Devarakonda*, <strong>A. U. Kaypak*</strong>, R. G. Goswami*, N. Patel, R. Khorrambakht, P. Krishnamurthy, and F. Khorrami</p><p class="venue"><em>arXiv preprint</em>, arXiv:2410.06239. (under review)</p><a class="doi" href="https://arxiv.org/abs/2410.06239" aria-label="Read the autonomous navigation preprint on arXiv">arXiv:2410.06239 ↗</a></article></li>
+            <li class="publication" id="pub-holder"><span class="pub-year">2026</span><article><h3>Hölder Signed Distance: A Differentiable, Signed, Parallelizable Metric for Robotics</h3><p class="authors">F. Bartelt, <strong>A. U. Kaypak</strong>, A. Tzes, F. Khorrami, L. C. A. Pimenta, and V. M. Gonçalves</p><p class="venue">(under review)</p><a class="doi" href="https://arxiv.org/abs/2608.07707" aria-label="Read the Hölder Signed Distance preprint on arXiv">arXiv:2608.07707 ↗</a></article></li>
+            <li class="publication" id="pub-rescore"><span class="pub-year">2026</span><article><h3>RESCORE: LLM-Driven Simulation Recovery in Control Systems Research Papers</h3><p class="authors">V. Bhat, S. Wei, <strong>A. U. Kaypak</strong>, P. Krishnamurthy, R. Karri, and F. Khorrami</p><p class="venue">(accepted for CDC 2026)</p><a class="doi" href="https://arxiv.org/abs/2604.04324" aria-label="Read the RESCORE preprint on arXiv">arXiv:2604.04324 ↗</a></article></li>
           </ol>
           <p class="note">* Equal contribution.</p>
         </div>
@@ -186,7 +188,7 @@
       <section class="section" aria-labelledby="academic-title">
         <div class="section-label"><p class="eyebrow">06 <span>/ Academic life</span></p><h2 id="academic-title">Teaching<br>&amp; service</h2></div>
         <div>
-          <div class="teaching"><ul class="compact-list"><li><strong>Course Assistant · Linear Systems</strong><span>New York University · Fall 2024</span></li><li><strong>Student Council Representative</strong><span>Bogazici University · Dec 2019 – Jun 2021</span></li></ul><p class="muted">Helped organize mentoring and scientific research incentive programs for undergraduates through the Electrical &amp; Electronics Engineering Student Council.</p></div>
+          <div class="teaching"><ul class="compact-list"><li><strong>Course Assistant · Linear Systems</strong><span>New York University · Fall 2024</span></li><li><strong>Student Council Representative</strong><span>Bogazici University · Dec 2019 – Jun 2021</span></li></ul></div>
         </div>
       </section>
       <section class="section" id="toolkit" aria-labelledby="toolkit-title">
@@ -198,7 +200,8 @@
       </section>
       <section class="contact" id="contact" aria-labelledby="contact-title">
         <div><p class="eyebrow">Contact &amp; profiles</p><h2 id="contact-title">Get in touch.</h2></div>
-        <div class="contact-links"><a class="email" href="mailto:ak10531@nyu.edu">ak10531@nyu.edu</a><div class="profiles">
+        <div class="contact-links"><div class="profiles">
+          <a href="mailto:ak10531@nyu.edu">Email <span aria-hidden="true">&nbsp;↗</span></a>
           <!-- Both profile URLs are supplied in the CV's hyperlink annotations; placeholders are unnecessary. -->
           <a href="https://scholar.google.com/citations?user=6ErWlTAAAAAJ&amp;hl=en&amp;oi=ao">Google Scholar <span aria-hidden="true">&nbsp;↗</span></a><a href="https://www.linkedin.com/in/aliumut/">LinkedIn <span aria-hidden="true">&nbsp;↗</span></a>
         </div></div>
